@@ -37,3 +37,48 @@
     opacity: 50%;
 }
 
+/*Afdelingen*/
+
+/*Iconen en tekst afdelingen*/
+.icons_afdelingen{
+    height: 50px;
+}
+.afdelingen_tekst_sp {
+    color: #DA9CA6;
+}
+.afdelingen_tekst_ki{
+    color: #C9C1D8;
+}
+.afdelingen_tekst_vo{
+    color: #B3C9B7;
+}
+
+/*Registreer*/
+.registreer{
+    position: relative;
+    text-align: center;
+}
+.registreer img{
+    height: 800px;
+}
+.registreer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+.registreer button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    border-radius: 50px;
+    height: 100px;
+    width: 300px;
+}
