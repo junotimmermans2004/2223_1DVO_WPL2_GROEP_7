@@ -43,7 +43,7 @@
 .icons_afdelingen{
     height: 50px;
 }
-.afdelingen_tekst_sp {
+.afdelingen_tekst_sp{
     color: #DA9CA6;
 }
 .afdelingen_tekst_ki{
@@ -59,11 +59,12 @@
     text-align: center;
 }
 .registreer img{
-    height: 800px;
+    height: 600px;
+
 }
 .registreer p{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -73,7 +74,7 @@
 }
 .registreer button{
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -81,4 +82,18 @@
     border-radius: 50px;
     height: 100px;
     width: 300px;
+}
+
+/*FOOTER*/
+h6 a{
+    text-decoration: none;
+}
+.footer_socials a i{
+    color: white;
+    font-size: 50px;
+}
+
+.copyright{
+    background-color: #1e1e1e;
+    width: 100%;
 }
