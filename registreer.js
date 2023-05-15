@@ -1,5 +1,5 @@
 //wachtwoord confirmation
-var password = document.getElementById("password")
+let password = document.getElementById("password")
     , confirm_password = document.getElementById("confirm_password");
 
 function validatePassword(){
