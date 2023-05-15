@@ -1,3 +1,30 @@
 img{
 
 }
+.btn-image {
+    background-image: url('Assets/Button_bg_Tekengebied 1.png');
+    background-size: contain;
+    color: white;
+    /*border-radius: 10%;*/
+
+}
+.card-body h5{
+    font-weight: bold;
+    font-size: 40px;
+    color: #757575;
+}
+.card-body p{
+    font-weight: bold;
+    font-size: 25px;
+    color: #757575;
+}
+.card-body button{
+    background-size: cover;
+}
+.card{
+    padding: 220px 0;
+
+}
+.carousel_reclame{
+    height: 640px;
+}
