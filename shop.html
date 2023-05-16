@@ -16,6 +16,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="shop.js" defer></script>
+
 </head>
 <body>
 <!--NAV-->
@@ -63,7 +65,7 @@
     <div class="carousel-item active">
       <div class="row carousel_reclame">
         <div class="col-md-6">
-          <div class="card border-0">
+          <div class="card border-0 textcarousel">
             <div class="card-body">
               <h5 class="card-title">Progain</h5>
               <p class="card-text">Get some PROGAINS with PROPANE!</p>
@@ -84,7 +86,7 @@
     <div class="carousel-item">
       <div class="row carousel_reclame">
         <div class="col-md-6">
-          <div class="card border-0">
+          <div class="card border-0 textcarousel">
             <div class="card-body">
               <h5 class="card-title">Matcha drink mix</h5>
               <p class="card-text">Drink de mix</p>
@@ -110,37 +112,108 @@
 </script>
 
 <!--STORE-->
-<div class="container mt-2">
+<div id="storecards" class="container mt-2">
   <div class="row">
     <div class="col-md-3">
       <!-- Categorieën -->
       <h3>Categorieën</h3>
-      <ul class="list-group">
-        <li class="list-group-item">Sport</li>
-        <li class="list-group-item">Voeding</li>
+      <div class="btn-group-vertical">
+        <input type="button" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+        <label onclick="filter('Sport', this)" class="btn btn-light btncategories p-3" for="option1">Sport</label>
+
+        <input type="button" class="btn-check" name="options" id="option2" autocomplete="off" />
+        <label onclick="filter('Accessoires', this)" class="btn btn-light btncategories p-3" for="option2">Accessoires</label>
+
+        <input type="button" class="btn-check" name="options" id="option3" autocomplete="off" />
+        <label onclick="filter('Voeding', this)" class="btn btn-light btncategories p-3" for="option3">Voeding</label>
         <!-- Voeg hier andere categorieën toe -->
-      </ul>
+      </div>
     </div>
+
+
     <div class="col-md-9">
       <!-- Producten -->
       <h3>Producten</h3>
-      <div class="row">
-        <!-- Voeg hier de code voor de producten toe -->
-      </div>
+      <div class="row productenbg">
+        <div class="row">
+<!--          CLASS CATEGORIES-->
+          <div class="col-md-4 Voeding">
+            <div class="card rounded-3">
+              <img src="Assets/vitalis_product_vitaminen.png" class="card-img-top" alt="Product 1">
+              <div class="card-body boxshadow">
+                <h5 class="card-title">Vitaminen</h5>
+                <p class="card-text">popping the pillies</p>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary"><i class="bi bi-plus"></i></button>
+                  <p class="m-0 prijs">€19,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 Accessoires">
+            <div class="card rounded-3">
+              <img src="Assets/vitalis_product_drinkfles.png" class="card-img-top" alt="Product 2">
+              <div class="card-body boxshadow">
+                <h5 class="card-title">Product 2</h5>
+                <p class="card-text">Beschrijving van</p>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary"><i class="bi bi-plus"></i></button>
+                  <p class="m-0 prijs">€19,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 Voeding">
+            <div class="card rounded-3">
+              <img src="Assets/vitalis_product_protien.png" class="card-img-top" alt="Product 3">
+              <div class="card-body boxshadow">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Beschrijving van</p>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary"><i class="bi bi-plus"></i></button>
+                  <p class="m-0 prijs">€19,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Voeg hier andere productkaarten toe -->
+
+          <div class="col-md-4 Voeding">
+            <div class="card rounded-3">
+              <img src="Assets/vitalis_product_protien.png" class="card-img-top" alt="Product 3">
+              <div class="card-body boxshadow">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Beschrijving van</p>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary"><i class="bi bi-plus"></i></button>
+                  <p class="m-0 prijs">€19,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+<!--          ////-->
+        </div>
+
+</div>
     </div>
   </div>
 </div>
 
 <!-- Zoekfunctie -->
-<div class="container mt-2">
-  <h3>Zoek producten</h3>
-  <form>
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Zoekterm" aria-label="Zoekterm">
-      <button class="btn btn-primary" type="submit">Zoeken</button>
-    </div>
-  </form>
-</div>
+<!--<div class="container mt-2">-->
+<!--  <form>-->
+<!--    <div class="input-group mb-3">-->
+<!--      <input type="text" class="form-control" placeholder="Zoekterm" aria-label="Zoekterm">-->
+<!--      <button class="btn btn-primary" type="submit">Zoeken</button>-->
+<!--    </div>-->
+<!--  </form>-->
+<!--</div>-->
 
 
 </body>
