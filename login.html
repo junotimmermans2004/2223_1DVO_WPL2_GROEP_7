@@ -58,9 +58,11 @@
                 <h1>Log in</h1>
 
                 <form>
+                    <div class="mb-3">
                     <button class="btn btn-outline-dark">
                         <img src="Assets/Itsme_logo.png" width="30" /> Log in met ItsMe
                     </button>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email adres</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" required>
@@ -69,26 +71,26 @@
                         <label for="password" class="form-label">Wachtwoord</label>
                         <input type="password" class="form-control" id="password" required>
                     </div>
-                    <div class="row row-cols-lg-auto g-3 align-items-center">
-                        <div class="col-12">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Herinner mij voor 30 dagen</label>
-                        <div class="col-12">
-                            <button type="wachtwoord vergeten" class="btn btn-dark">wachtwoord vergeten</button>
-                        </div>
-                    </div>
-                    </div>
-                    <button type="submit" class="btn btn-dark">Registreer</button>
-                    <div class="mb-3">
-                        <p>Geen account? Registreer hier!</p>
-                    </div>
-                </form>
-            </div>
-            <div class="col">
-                <img src="Assets/foto_registreer.png" class="img-fluid" alt="Responsive image">
-            </div>
-        </div>
-    </div>
+                    <!--<div class="row row-cols-lg-auto g-3 align-items-center">-->
+                       <div class="mb-3">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                       <label class="form-check-label" for="exampleCheck1">Herinner mij voor 30 dagen</label>
+                       <div class="mb-3">
+                           <button type="wachtwoord vergeten" class="btn ">wachtwoord vergeten</button>
+                       </div>
+                   </div>
+                   <!---</div>-->
+                   <button type="submit" class="btn btn-dark">Registreer</button>
+                   <div class="mb-3">
+                       <span>Nog geen account? <a href="registreer.html">Registreer hier!</a></span>
+                   </div>
+               </form>
+           </div>
+           <div class="col">
+               <img src="Assets/foto_registreer.png" class="img-fluid" alt="Responsive image">
+           </div>
+       </div>
+   </div>
 
 
 </main>
