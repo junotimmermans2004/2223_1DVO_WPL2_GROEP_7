@@ -1,9 +1,12 @@
-img{
 
-}
+
+
+
+
 .btn-image {
     background-image: url('Assets/Button_bg_Tekengebied 1.png');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     /*border-radius: 10%;*/
 
@@ -21,10 +24,24 @@ img{
 .card-body button{
     background-size: cover;
 }
+button{
+    font-weight: bolder;
+}
 .card{
     padding: 220px 0;
+    background-image: url("Assets/shop_bg.png");
+    background-size: cover;
+
 
 }
 .carousel_reclame{
     height: 640px;
+}
+
+/*CAROUSEL item 1*/
+
+.prijs{
+    font-size: 25px;
+    font-weight: bold;
+    color: #757575;
 }
