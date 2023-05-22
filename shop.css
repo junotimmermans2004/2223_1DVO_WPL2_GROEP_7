@@ -1,0 +1,158 @@
+
+
+
+
+
+.btn-image {
+    background-image: url('Assets/Button_bg_Tekengebied 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /*border-radius: 10%;*/
+
+}
+.card-body h5{
+    font-weight: bold;
+    font-size: 40px;
+    color: #757575;
+}
+.card-body p{
+    font-weight: bold;
+    font-size: 25px;
+    color: #757575;
+}
+.card-body button{
+    background-size: cover;
+}
+button{
+    font-weight: bolder;
+}
+.textcarousel{
+    padding: 220px 0;
+    background-image: url("Assets/shop_bg.png");
+    background-size: cover;
+}
+
+.carousel_reclame{
+    height: 640px;
+}
+
+/*CAROUSEL item 1*/
+
+.prijs{
+    font-size: 25px;
+    font-weight: bold;
+    color: #757575;
+}
+/*SHOP CSS*/
+.boxshadow{
+
+}
+
+
+
+
+.productenbg{
+    background-image: url("Assets/shop_bg.png");
+    background-size: cover;
+}
+#storecards img{
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+}
+
+#storecards h5{
+    font-size: 20px;
+}
+#storecards p{
+    font-size: 15px;
+}
+
+
+
+
+
+.btn-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+
+/*Footer*/
+
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
