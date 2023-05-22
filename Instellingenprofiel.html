@@ -51,186 +51,193 @@
     </div>
 </nav>
 <main>
-    <ul>
-        <li>
-            Profiel
-        </li>
-        <li>
-            Informatie
-        </li>
-        <li>
-            Allergenen
-        </li>
-    </ul>
-<nav>
-    <div class="row-g3">
-        <div class="col">
-            <img src='https://placehold.jp/170x170.png' class="img-fluid" alt="Responsive image">
+    <div class="row">
+        <div class="col-2">
+            <ul id="mini_nav">
+                <li>
+                    <a href=#profielinfo>Mijn profiel</a>
+                </li>
+                <li>
+                    <a href="#profielinfo2">Mijn details</a>
+                </li>
+                <li>
+                    <a href="#profielinfo3">Allergenen</a>
+                </li>
+            </ul>
         </div>
+        <div class="col-8">
+            <nav>
+                <div class="row-g3" id="profielinfo">
+                    <div class="col">
+                        <img src='https://placehold.jp/170x170.png' class="img-fluid" alt="Responsive image">
+                    </div>
 
-    <div class="col-6">
-        <label for="name" class="form-label">Naam</label>
-        <input type="text" class="form-control" id="name" >
+                    <div class="col-6">
+                        <label for="name" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" id="name" >
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName" class="form-label">Naam</label>
+                        <input type="text" class="form-control" id="lastName" >
+                    </div>
+                </div>
+                <hr>
+            </nav>
+            <!--Form 2nd part-->
+            <form class="row g-3" id="profielinfo2">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDate" class="form-label">Geboortedatum</label>
+                    <input type="date" class="form-control" id="inputDate">
+                </div>
+                <div class="col-6">
+                    <label for="phoneNumber" class="form-label">Telefoonnummer</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="+32 ...">
+                </div>
+                <div class="col-6">
+                    <label for="inputAddress" class="form-label">Straatnaam</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Stad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Postcode</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Wachtwoord</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="confirm_password" class="form-label">Bevestig wachtwoord</label>
+                    <input type="password" class="form-control" id="confirm_password" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Opslaan</button>
+                </div>
+            </form>
+            <hr>
+            <!--Form 3th part-->
+            <span class="border-primary">
+            <div class="container" id="profielinfo3">
+                <div class="row" id="allergie">
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Melk</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Ei</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Pinda's</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="allergie">
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">Noten</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                            <label class="form-check-label" for="inlineCheckbox5">Weekdieren</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                            <label class="form-check-label" for="inlineCheckbox6">Roosfruit</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="allergie">
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                            <label class="form-check-label" for="inlineCheckbox7">Soja</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                            <label class="form-check-label" for="inlineCheckbox8">Gluten</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
+                            <label class="form-check-label" for="inlineCheckbox9">Sesamzaad</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="allergie">
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
+                            <label class="form-check-label" for="inlineCheckbox10">Lupine</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
+                            <label class="form-check-label" for="inlineCheckbox11">Selderij</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option12">
+                            <label class="form-check-label" for="inlineCheckbox12">Vis</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="allergie">
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option13">
+                            <label class="form-check-label" for="inlineCheckbox13">Schaaldieren</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option14">
+                            <label class="form-check-label" for="inlineCheckbox14">Zwaveloxide</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option15">
+                            <label class="form-check-label" for="inlineCheckbox15">Mosterd</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </span>
+            <hr>
+        </div>
     </div>
-    <div class="col-6">
-        <label for="lastName" class="form-label">Achternaam</label>
-        <input type="text" class="form-control" id="lastName" >
-    </div>
-    </div>
-<hr>
-</nav>
-    <!--Form 2nd part-->
-    <form class="row g-3">
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-            <label for="inputDate" class="form-label">Geboortedatum</label>
-            <input type="date" class="form-control" id="inputDate">
-        </div>
-        <div class="col-6">
-            <label for="phoneNumber" class="form-label">Telefoonnummer</label>
-            <input type="text" class="form-control" id="phoneNumber" placeholder="+32 ...">
-        </div>
-        <div class="col-6">
-            <label for="inputAddress" class="form-label">Straatnaam</label>
-            <input type="text" class="form-control" id="inputAddress">
-        </div>
-        <div class="col-md-6">
-            <label for="inputCity" class="form-label">Stad</label>
-            <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-2">
-            <label for="inputZip" class="form-label">Postcode</label>
-            <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-md-6">
-            <label for="password" class="form-label">Wachtwoord</label>
-            <input type="password" class="form-control" id="password" required>
-        </div>
-        <div class="col-md-6">
-            <label for="confirm_password" class="form-label">Bevestig wachtwoord</label>
-            <input type="password" class="form-control" id="confirm_password" required>
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Opslaan</button>
-        </div>
-    </form>
-    <hr>
-    <!--Form 3th part-->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Melk</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Ei</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label" for="inlineCheckbox3">Pinda's</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                    <label class="form-check-label" for="inlineCheckbox4">Noten</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                    <label class="form-check-label" for="inlineCheckbox5">Weekdieren</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
-                    <label class="form-check-label" for="inlineCheckbox6">Roosfruit</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
-                    <label class="form-check-label" for="inlineCheckbox7">Soja</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
-                    <label class="form-check-label" for="inlineCheckbox8">Gluten</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option9">
-                    <label class="form-check-label" for="inlineCheckbox9">Sesamzaad</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="option10">
-                    <label class="form-check-label" for="inlineCheckbox10">Lupine</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" value="option11">
-                    <label class="form-check-label" for="inlineCheckbox11">Selderij</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" value="option12">
-                    <label class="form-check-label" for="inlineCheckbox12">Vis</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox13" value="option13">
-                    <label class="form-check-label" for="inlineCheckbox13">Schaaldieren</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox14" value="option14">
-                    <label class="form-check-label" for="inlineCheckbox14">Zwaveloxide</label>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox15" value="option15">
-                    <label class="form-check-label" for="inlineCheckbox15">Mosterd</label>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 </main>
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
