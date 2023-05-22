@@ -57,7 +57,7 @@ button{
     background-size: cover;
 }
 #storecards img{
-    height: 200px;
+    /*height: 200px;*/
     width: auto;
     overflow: hidden;
 }
@@ -69,6 +69,10 @@ button{
     font-size: 15px;
 }
 
+
+.card-img-top{
+    width: 100%;
+}
 
 
 
