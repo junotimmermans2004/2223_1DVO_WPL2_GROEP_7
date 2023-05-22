@@ -23,7 +23,7 @@
 <!--NAV-->
 <nav class="navbar navbar-expand navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand mb-lg-3" href="#">
+    <a class="navbar-brand mb-lg-3" href="index.html">
       <img alt="vitalis" src="Assets/Middel%201.png" width="150" height="auto" class="d-inline-block align-text-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,8 +111,18 @@
   })
 </script>
 
+<!-- Zoekfunctie-->
+<!--<div class="container">-->
+<!--  <form>-->
+<!--    <div class="input-group">-->
+<!--      <input type="text" class="form-control" placeholder="Zoekterm" aria-label="Zoekterm">-->
+<!--      <button class="btn btn-primary" type="submit">Zoeken</button>-->
+<!--    </div>-->
+<!--  </form>-->
+<!--</div>-->
+
 <!--STORE-->
-<div id="storecards" class="container mt-2">
+<div id="storecards" class="container mt-2 p-5">
   <div class="row">
     <div class="col-md-3">
       <!-- Categorieën -->
@@ -126,9 +136,11 @@
 
         <input type="button" class="btn-check" name="options" id="option3" autocomplete="off" />
         <label onclick="filter('Voeding', this)" class="btn btn-light btncategories p-3" for="option3">Voeding</label>
+
         <!-- Voeg hier andere categorieën toe -->
       </div>
     </div>
+
 
 
     <div class="col-md-9">
@@ -205,16 +217,48 @@
   </div>
 </div>
 
-<!-- Zoekfunctie -->
-<!--<div class="container mt-2">-->
-<!--  <form>-->
-<!--    <div class="input-group mb-3">-->
-<!--      <input type="text" class="form-control" placeholder="Zoekterm" aria-label="Zoekterm">-->
-<!--      <button class="btn btn-primary" type="submit">Zoeken</button>-->
-<!--    </div>-->
-<!--  </form>-->
-<!--</div>-->
+<!--Footer-->
+<footer class="bg-dark" id="myFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h5>Terms</h5>
+        <ul>
+          <li><a href="#" class="text-white">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <!--                        <li><a href="#">Reviews</a></li>-->
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <!--                        <li><a href="#">Help desk</a></li>-->
+          <!--                        <li><a href="#">Forums</a></li>-->
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>About us</h5>
+        <ul>
+          <li><a href="#" class="text-white">Contact</a></li>
+          <!--                        <li><a href="#">Terms of Use</a></li>-->
+          <!--                        <li><a href="#">Privacy Policy</a></li>-->
+        </ul>
+      </div>
+    </div>
+<!--    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3425716525985!2d5.3437275763997905!3d50.935877371688974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12179dfa791ab%3A0xb06012db8da643e!2sElfde-Liniestraat%2012%2C%203500%20Hasselt!5e0!3m2!1snl!2sbe!4v1684152571961!5m2!1snl!2sbe" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.9489727731398!2d4.700553276080718!3d50.88765477167896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160c54491777f%3A0xc12bccd892a575f0!2sVaartkom%2C%203000%20Leuven!5e0!3m2!1snl!2sbe!4v1684756140361!5m2!1snl!2sbe" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+  </div>
+  <div class="footer_socials text-center p-4">
+    <a href="#" class="twitter p-3"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="facebook p-3"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="google p-3"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <div class="footer-copyright bg-dark">
+    <p>© 2023 Gezonheidspraktijk Vitalis </p>
+  </div>
+</footer>
 
 </body>
 </html>
