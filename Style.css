@@ -23,8 +23,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-
-    font-size: 90px;
+    font-weight: bold;
+    font-size: 6vw;
     z-index: 2;
 }
 .home_tekst2{
@@ -32,8 +32,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 90px;
-    background-color: black;
+    font-size: 6vw;
+    /*background-color: black;*/
     opacity: 50%;
 }
 
@@ -57,20 +57,22 @@
 .registreer{
     position: relative;
     text-align: center;
+    width: 100%;
 }
 .registreer img{
     height: 600px;
-
+    width: auto;
 }
 .registreer p{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     font-weight: bold;
-    font-size: x-large;
+    font-size: 2vw;
     color: white;
+    width: auto;
 }
 
 .registreer button{
