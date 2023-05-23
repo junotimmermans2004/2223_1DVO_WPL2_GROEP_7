@@ -52,7 +52,7 @@
 </nav>
 <main>
     <div class="row">
-        <div class="col-2">
+        <div class="col-3">
             <ul id="mini_nav">
                 <li>
                     <a href=#profielinfo>Mijn profiel</a>
@@ -61,17 +61,18 @@
                     <a href="#profielinfo2">Mijn details</a>
                 </li>
                 <li>
-                    <a href="#profielinfo3">Allergenen</a>
+                    <a href="#profielinfo3">Allergiën</a>
                 </li>
             </ul>
         </div>
+        <form class="col">
         <div class="col-8">
-            <nav>
-                <div class="row-g3" id="profielinfo">
+                <h2 id="profielinfo">Profiel</h2>
+                <div class="row-g-3" >
                     <div class="col">
                         <img src='https://placehold.jp/170x170.png' class="img-fluid" alt="Responsive image">
                     </div>
-
+                </div>
                     <div class="col-6">
                         <label for="name" class="form-label">Voornaam</label>
                         <input type="text" class="form-control" id="name" >
@@ -80,11 +81,10 @@
                         <label for="lastName" class="form-label">Naam</label>
                         <input type="text" class="form-control" id="lastName" >
                     </div>
-                </div>
                 <hr>
-            </nav>
             <!--Form 2nd part-->
-            <form class="row g-3" id="profielinfo2">
+            <h2 id="profielinfo2">Detailes</h2>
+            <div class="row g-3">
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail4">
@@ -109,6 +109,10 @@
                     <label for="inputZip" class="form-label">Postcode</label>
                     <input type="text" class="form-control" id="inputZip">
                 </div>
+                <div class="col-md-1">
+                    <label for="inputMailbox" class="form-label">Bus</label>
+                    <input type="text" class="form-control" id="inputMailbox">
+                </div>
                 <div class="col-md-6">
                     <label for="password" class="form-label">Wachtwoord</label>
                     <input type="password" class="form-control" id="password" required>
@@ -117,14 +121,12 @@
                     <label for="confirm_password" class="form-label">Bevestig wachtwoord</label>
                     <input type="password" class="form-control" id="confirm_password" required>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Opslaan</button>
-                </div>
-            </form>
+            </div>
             <hr>
             <!--Form 3th part-->
+            <h2 id="profielinfo3">Allergiën</h2>
             <span class="border-primary">
-            <div class="container" id="profielinfo3">
+            <div class="container">
                 <div class="row" id="allergie">
                     <div class="col-sm">
                         <div class="form-check form-check-inline">
@@ -233,10 +235,14 @@
                         </div>
                     </div>
                 </div>
+                <hr>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary float-end">Opslaan</button>
+                </div>
             </div>
             </span>
-            <hr>
         </div>
+        </form>
     </div>
 </main>
 <footer class="bg-dark text-center text-white">

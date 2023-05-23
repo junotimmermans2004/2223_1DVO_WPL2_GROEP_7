@@ -5,6 +5,7 @@
     padding-top: 25px;
 }
 
+
 main {
     padding-left: 60px;
     padding-right: 60px;
@@ -23,11 +24,13 @@ main {
 }
 #mini_nav li {
     list-style-type: none;
-
+}
+#mini_nav {
+    position: fixed;
 }
 /*algemeen form*/
 hr {
-    padding-bottom: 20px;
+    padding: 20px;
 }
 /*allegie*/
 #allergie {
