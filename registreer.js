@@ -4,7 +4,7 @@ let password = document.getElementById("password")
 
 function validatePassword(){
     if(password.value != confirm_password.value) {
-        confirm_password.setCustomValidity("Wachtwoord is niet hetzelfde");
+        confirm_password.setCustomValidity("Wachtwoord is niet hetzelfde.");
     } else {
         confirm_password.setCustomValidity('');
     }
