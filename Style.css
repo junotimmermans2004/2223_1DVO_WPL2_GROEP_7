@@ -165,6 +165,28 @@ h6 a{
     padding-bottom: 38px;
 }
 
+/*CART*/
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+}
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
 
 
 

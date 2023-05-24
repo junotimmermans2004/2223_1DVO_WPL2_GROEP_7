@@ -1,7 +1,8 @@
-
-
-
-
+.navbar {
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
 
 .btn-image {
     background-image: url('Assets/Button_bg_Tekengebied 1.png');
@@ -155,6 +156,25 @@ button{
     padding-top: 30px;
     padding-bottom: 38px;
 }
+
+
+/*!*CART*! (in de nav)*/
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+}
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 50px;
+}
+
 
 
 
