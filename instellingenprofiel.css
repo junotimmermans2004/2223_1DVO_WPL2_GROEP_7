@@ -28,6 +28,16 @@ main {
 #mini_nav {
     position: fixed;
 }
+@media screen and (min-width: 480px) {
+    #mini_nav2 {
+        display: block;
+    }
+}
+@media screen and (max-width: 480px) {
+    #mini_nav2 {
+        display: none;
+    }
+}
 /*algemeen form*/
 hr {
     padding: 20px;
