@@ -61,6 +61,8 @@ let generateShop = () => {
             </div>
           </div>
     `;
+
+
         })
         .join(""));
 };
