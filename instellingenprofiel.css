@@ -11,6 +11,9 @@ main {
     padding-right: 60px;
     padding-top: 25px;
 }
+main {
+    background-image: url("Assets/Background test.png");
+}
 /*mini nav*/
 #mini_nav li a{
     color: #3F3f3f;
