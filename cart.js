@@ -9,9 +9,9 @@ let label = document.getElementById("label");
 
 let basket = JSON.parse(localStorage.getItem("shop")) || [];
 
-/**
- * ! To calculate total amount of selected Items
- */
+// /**
+//  * ! To calculate total amount of selected Items
+//  */
 
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
@@ -142,11 +142,11 @@ let removeItem = (id) => {
   localStorage.setItem("shop", JSON.stringify(basket));
 };
 
-/**
- * ! Used to calculate total amount of the selected Products
- * ! with specific quantity
- * ? When basket is blank, it will show nothing
- */
+// /**
+//  * ! Used to calculate total amount of the selected Products
+//  * ! with specific quantity
+//  * ? When basket is blank, it will show nothing
+//  */
 
 let TotalAmount = () => {
   if (basket.length !== 0) {
