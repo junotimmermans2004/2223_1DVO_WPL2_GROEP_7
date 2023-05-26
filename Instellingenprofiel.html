@@ -40,18 +40,26 @@
                     <a class="nav-link mx-3" href="#">Voeding</a>
                 </li>
             </ul>
-            <div class="d-flex">
+            <div class="dropdown d-flex">
                 <button class="btn btn-dark me-2">Maak afspraak</button>
-                <a class="btn btn-outline-dark me-2" href="#">
+                <button class="btn btn-outline-dark dropdown-toggle me-2" type="button" href="#" id="dropdown-menu" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-person"></i>
-                </a>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="registreer.html">Registreer</a></li>
+                    <li><a class="dropdown-item" href="instellingenprofiel.html">Instellingen profiel</a></li>
+                </ul>
                 <a class="btn btn-outline-dark" href="#">
                     <i class="bi bi-cart"></i>
                 </a>
+
             </div>
+
         </div>
     </div>
 </nav>
+
 <!--Mini nav-->
 <main>
     <div class="row">
@@ -86,7 +94,7 @@
                     </div>
                 <hr>
             <!--Form 2nd part-->
-            <h2 id="profielinfo2">Detailes</h2>
+            <h2 id="profielinfo2">Details</h2>
             <div class="row g-3">
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
