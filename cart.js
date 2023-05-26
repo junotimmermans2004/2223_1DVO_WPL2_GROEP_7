@@ -63,7 +63,7 @@ let generateCartItems = () => {
       })
       .join(""));
   } else {
-    ShoppingCart.innerHTML = "";
+    ShoppingCart.innerHTML = "shop";
     label.innerHTML = `
     <h2>Cart is Empty</h2>
     <a href="index.html">
