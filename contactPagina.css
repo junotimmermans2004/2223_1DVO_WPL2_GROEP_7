@@ -1,0 +1,233 @@
+/*contactPagina*/
+
+/*Geeft het vitalis logo de juiste grootte.*/
+nav div a img {
+    width: 150px;
+    height: auto;
+}
+
+/*Geeft iets meer ruimte tussen de "Contacteer ons" header en de andere elementen.*/
+#headerText {
+    margin: 1rem 0 1rem 0;
+}
+
+#container {
+    width: 70%;
+}
+
+#contactbox1 {
+    width: 25rem;
+    height: 28rem;
+    background-color: #F8F8F8;
+    background-image: url("Assets/background_contactbox1.png");
+    border-radius: 25px 0 0 25px;
+    padding: 1rem 2.4rem;
+}
+
+.contactboxRowSpacing {
+    margin: 1rem 0 1rem 0;
+}
+
+#contactbox2 {
+    background-color: #FDFDFD;
+    border-radius: 0 25px 25px 0;
+}
+
+#table {
+    border-collapse: separate;
+    border-spacing: 2rem 0.5rem;
+}
+
+table td {
+    width: 12rem;
+}
+
+#inputMessage {
+    resize: none;
+}
+
+#verstuurKnop {
+    margin: 2rem 0 0 0;
+}
+
+.boxstyle td {
+    width: 100%;
+    border: none;
+}
+
+.boxstyle td input,
+textarea {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px grey;
+    padding: 0.3rem;
+}
+
+input,
+textarea:focus {
+    outline: none;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #3F3F3F;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+input[type="radio"]:checked {
+    background-color: #3F3F3F;
+    background-image: url("Assets/whiteCheckmark.png");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+#inputMessage {
+    width: 100%;
+}
+
+#labelRadiobuttons {
+    font-weight: bold;
+}
+
+.ghostText {
+    color: darkgrey;
+}
+
+.contactbox1icons {
+    font-size: 24px;
+    margin-top: auto;
+}
+
+.contactbox1text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #808080;
+}
+
+#contactSocialMediaButtons {
+    margin-top: 3rem;
+}
+
+
+@media only screen
+and (device-width : 820px)
+and (device-height : 1180px)
+and (-webkit-device-pixel-ratio : 2) {
+
+    nav div a img {
+        width: 200px;
+        height: auto;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #contactbox1 {
+        border-radius: 25px;
+        width: auto;
+        height: 18rem;
+    }
+
+    #contactbox2 {
+        border-radius: 25px;
+    }
+
+    #table {
+        border-spacing: 1rem 0.5rem;
+    }
+
+    #verstuurKnop {
+        margin-top: 2rem;
+    }
+
+    .contactbox1icons {
+        font-size: 26px;
+    }
+
+    .contactbox1text {
+        font-size: 20px;
+    }
+
+    .inputVeld {
+        width: 18rem;
+        height: 3rem;
+    }
+}
+
+@media only screen
+and (device-width : 414px)
+and (device-height : 896px)
+and (-webkit-device-pixel-ratio : 2) {
+
+    #headerText {
+        font-size: 38px;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #contactbox1 h4 {
+        font-size: 28px;
+    }
+
+    #contactbox1 {
+        padding: 1rem;
+    }
+
+    #contactbox2 {
+        padding: 1rem;
+    }
+
+    #table {
+        border-spacing: 1rem 0.5rem;
+    }
+
+    .contactbox1icons {
+        font-size: 16px;
+    }
+
+    .contactbox1text {
+        font-size: 20px;
+    }
+
+    #verstuurKnop {
+        margin: 2rem 0 0 0;
+    }
+
+
+    input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 2px solid #3F3F3F;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="radio"]:checked {
+        background-color: #3F3F3F;
+        background-image: url("Assets/whiteCheckmark.png");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+    }
+
+    .ghostText {
+        font-size: 20px;
+    }
+
+    .contactbox1icons {
+        font-size: 2rem;
+        margin-top: auto;
+    }
+
+    .inputVeld {
+        width: 10rem;
+    }
+}
