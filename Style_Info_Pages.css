@@ -1,0 +1,177 @@
+.navbar {
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+/*Iconen kleur*/
+.btn-outline-primary:hover {
+    color: #fff;  /* tekstkleur wit maken */
+}
+.bg-img{
+    width: 100%;
+}
+
+
+/*Iconen en tekst afdelingen*/
+.icons_afdelingen{
+    height: 50px;
+}
+
+/*Registreer*/
+.registreer{
+    position: relative;
+    text-align: center;
+}
+.registreer img{
+    height: 600px;
+
+}
+.registreer p{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+
+.registreer button{
+    margin-right: 90px;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    border-radius: 50px;
+    height: 100px;
+    width: 300px;
+    background-color: #656565;
+}
+
+/*FOOTER*/
+h6 a{
+    text-decoration: none;
+}
+.footer_socials a i{
+    color: white;
+    font-size: 30px;
+}
+
+.copyright{
+    width: 100%;
+}
+
+
+/*FOOTER2 css*/
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
+
+.imgSportInfo {
+    border-radius: 50px;
+}
+
+.Nav_Info {
+    color: black;
+    font-size: 22px;
+    position: relative;
+}
+
+
+.Nav_Info::before {
+    content: "";
+    position: absolute;
+    left: -10px; /* Adjust the position of the line */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 2px;
+    background-color: #000; /* Adjust the color of the line */
+}
+
+.OnsTeam {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .col-md-3,
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
