@@ -37,6 +37,10 @@
     opacity: 50%;
 }
 
+
+
+
+
 /*Afdelingen*/
 
 /*Iconen en tekst afdelingen*/
@@ -85,6 +89,7 @@
     border-radius: 50px;
     height: 100px;
     width: 300px;
+    background-color: #656565;
 }
 
 /*FOOTER*/
@@ -190,11 +195,11 @@ h6 a{
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 414px) {
     #myFooter {
         text-align: center;
     }
     #myFooter .row {
         margin: 0;
     }
-}
+
