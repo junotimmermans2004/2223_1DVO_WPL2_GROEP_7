@@ -1,0 +1,178 @@
+.navbar {
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+/*Iconen kleur*/
+.btn-outline-primary:hover {
+    color: #fff;  /* tekstkleur wit maken */
+}
+.bg-img{
+    width: 100%;
+}
+
+/*Text home page*/
+.has-bg-img{
+    position: relative;
+    text-align: center;
+}
+.home_tekst{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    z-index: 2;
+}
+.home_tekst2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    /*background-color: black;*/
+    opacity: 50%;
+}
+
+/*Afdelingen*/
+
+/*Iconen en tekst afdelingen*/
+.icons_afdelingen{
+    height: 50px;
+}
+.afdelingen_tekst_sp{
+    color: #DA9CA6;
+}
+.afdelingen_tekst_ki{
+    color: #C9C1D8;
+}
+.afdelingen_tekst_vo{
+    color: #B3C9B7;
+}
+
+/*Registreer*/
+.registreer{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.registreer img{
+    height: 600px;
+    width: auto;
+}
+.registreer p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+    width: auto;
+}
+
+.registreer button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    border-radius: 50px;
+    height: 100px;
+    width: 300px;
+}
+
+/*FOOTER*/
+h6 a{
+    text-decoration: none;
+}
+.footer_socials a i{
+    color: white;
+    font-size: 30px;
+}
+
+.copyright{
+    width: 100%;
+}
+
+
+/*FOOTER2 css*/
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
