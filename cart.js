@@ -201,23 +201,22 @@ let generateCartItems = () => {
   else {
     ShoppingCart.innerHTML = "";
     label.innerHTML = `
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!--    <h2>Uw winkelmandje is leeg</h2>-->
+<!--    <a href="index.html">-->
+<!--      <button class="HomeBtn">Terug naar home</button>-->
+<!--    </a>-->
+  `;
 
-
-    <h2>Uw winkelmandje is leeg</h2>
-    <a href="index.html">
-      <button class="HomeBtn">Terug naar home</button>
-    </a>
-    `;
+    // Code voor het genereren van de script binnen de "card mb-3" div
+    const shoppingCartContainer = document.getElementById("shopping-cart");
+    shoppingCartContainer.innerHTML = `
+    <div class="card-body">
+      <p class="card-text">Uw winkelmandje is leeg.</p>
+      <a href="index.html" class="btn btn-primary">Terug naar home</a>
+    </div>
+  `;
   }
+
 };
 
 generateCartItems();
