@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="shop.css">
+
 
 
   <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap-grid.min.css">
@@ -16,12 +16,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="shop.css">
   <script src="shop.js" defer></script>
 
 </head>
 <body>
 <!--NAV-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
   <div class="container-fluid">
     <a class="navbar-brand mb-lg-3" href="index.html">
@@ -51,8 +52,13 @@
         <a class="btn btn-outline-dark me-2" href="#">
           <i class="bi bi-person"></i>
         </a>
-        <a class="btn btn-outline-dark" href="#">
+
+        <!--                Cart-->
+        <a href="cart.html">
+        <div class="btn btn-outline-dark cart">
           <i class="bi bi-cart"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+        </div>
         </a>
       </div>
     </div>
@@ -68,11 +74,11 @@
         <div class="col-md-6">
           <div class="card border-0 textcarousel">
             <div class="card-body">
-              <h5 class="card-title">Progain</h5>
-              <p class="card-text">Het perfecte voedingssuplement voor u!</p>
+              <h5 class="card-title">Plant powered protein</h5>
+              <p class="card-text">Enorm rijk aan proteïne en erg belangrijk bij een veganistisch dieet!</p>
             </div>
             <div class="d-flex align-items-center p-3">
-              <button type="button" class="btn-image white-text border-0 p-3 my-4 rounded-4 hover-shadow">Toevoegen aan winkelmandje</button>
+              <button onclick="addToCart('jfhgbvnscs')" type="button" class="btn-image white-text border-0 p-3 my-4 rounded-4 hover-shadow">Toevoegen aan winkelmandje</button>
               <p class="m-5 prijs">€30,00</p>
             </div>
           </div>
@@ -89,8 +95,8 @@
         <div class="col-md-6">
           <div class="card border-0 textcarousel">
             <div class="card-body">
-              <h5 class="card-title">Matcha drink mix</h5>
-              <p class="card-text">Drink de mix</p>
+              <h5 class="card-title">Macha Drink mix</h5>
+              <p class="card-text">Super gezond, lekker en ook nog makkelijk te bereiden!</p>
             </div>
             <div class="d-flex align-items-center p-3">
               <button type="button" class="btn-image white-text border-0 p-3 my-4 rounded-4">Toevoegen aan winkelmandje</button>
@@ -148,183 +154,183 @@
       <!-- Producten -->
       <h3>Producten</h3>
       <div class="row productenbg">
-        <div class="row">
+        <div class="row" id="shop">
 <!--          CLASS CATEGORIES-->
-
-          <div class="col-md-4 p-2 Accessoires">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_drinkfles.png" class="card-img-top" alt="Product 2">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Beschrijving van</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 p-2 Sport">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_vitaminen.png" class="card-img-top" alt="Product 1">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Vitaminen</h5>
-                <p class="card-text">popping the pillies</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_vitaminen2.png" class="card-img-top" alt="Product 1">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Vitaminen</h5>
-                <p class="card-text">popping the pillies</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_vitaminen3.png" class="card-img-top" alt="Product 1">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Vitaminen</h5>
-                <p class="card-text">popping the pillies</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_vitaminen4.png" class="card-img-top" alt="Product 1">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Vitaminen</h5>
-                <p class="card-text">popping the pillies</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_vitaminen5.png" class="card-img-top" alt="Product 1">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Vitaminen</h5>
-                <p class="card-text">popping the pillies</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_vitaminen6.png" class="card-img-top" alt="Product 1">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Vitaminen</h5>
-                <p class="card-text">popping the pillies</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_protien.png" class="card-img-top" alt="Product 3">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Beschrijving van</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Voeg hier andere productkaarten toe -->
+<!--VAN HIER-->
+<!--          <div class="col-md-4 p-2 Accessoires">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_drinkfles.png" class="card-img-top" alt="Product 2">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Product 2</h5>-->
+<!--                <p class="card-text">Beschrijving van</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
 
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_suplement3.png" class="card-img-top" alt="Product 3">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Beschrijving van</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-md-4 p-2 Sport">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_vitaminen.png" class="card-img-top" alt="Product 1">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Vitaminen</h5>-->
+<!--                <p class="card-text">popping the pillies</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_suplement4.png" class="card-img-top" alt="Product 3">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Beschrijving van</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_vitaminen2.png" class="card-img-top" alt="Product 1">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Vitaminen</h5>-->
+<!--                <p class="card-text">popping the pillies</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_vitaminen3.png" class="card-img-top" alt="Product 1">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Vitaminen</h5>-->
+<!--                <p class="card-text">popping the pillies</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_vitaminen4.png" class="card-img-top" alt="Product 1">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Vitaminen</h5>-->
+<!--                <p class="card-text">popping the pillies</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_vitaminen5.png" class="card-img-top" alt="Product 1">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Vitaminen</h5>-->
+<!--                <p class="card-text">popping the pillies</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_vitaminen6.png" class="card-img-top" alt="Product 1">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Vitaminen</h5>-->
+<!--                <p class="card-text">popping the pillies</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_protien.png" class="card-img-top" alt="Product 3">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Product 3</h5>-->
+<!--                <p class="card-text">Beschrijving van</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Voeg hier andere productkaarten toe &ndash;&gt;-->
 
 
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_suplement5.png" class="card-img-top" alt="Product 3">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Beschrijving van</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_suplement3.png" class="card-img-top" alt="Product 3">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Product 3</h5>-->
+<!--                <p class="card-text">Beschrijving van</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_suplement4.png" class="card-img-top" alt="Product 3">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Product 3</h5>-->
+<!--                <p class="card-text">Beschrijving van</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
 
-          <div class="col-md-4 p-2 Voeding">
-            <div class="card rounded-3">
-              <img src="Assets/vitalis_product_suplement6.png" class="card-img-top" alt="Product 3">
-              <div class="card-body boxshadow">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Beschrijving van</p>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>
-                  <p class="m-0 prijs">€19,99</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_suplement5.png" class="card-img-top" alt="Product 3">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Product 3</h5>-->
+<!--                <p class="card-text">Beschrijving van</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
 
+<!--          <div class="col-md-4 p-2 Voeding">-->
+<!--            <div class="card rounded-3">-->
+<!--              <img src="Assets/vitalis_product_suplement6.png" class="card-img-top" alt="Product 3">-->
+<!--              <div class="card-body boxshadow">-->
+<!--                <h5 class="card-title">Product 3</h5>-->
+<!--                <p class="card-text">Beschrijving van</p>-->
+<!--                <div class="card-footer d-flex justify-content-between align-items-center">-->
+<!--                  <button class="btn btn-secondary"><i class="bi bi-plus"></i></button>-->
+<!--                  <p class="m-0 prijs">€19,99</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--TOT hier-->
 
 
 <!--          ////-->
