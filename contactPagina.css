@@ -1,4 +1,9 @@
 /*contactPagina*/
+.navbar {
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
 
 /*Geeft het vitalis logo de juiste grootte.*/
 nav div a img {

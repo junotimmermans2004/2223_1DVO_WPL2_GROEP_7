@@ -43,6 +43,7 @@
       </ul>
       <div class="d-flex">
         <a href="Afspraken.html" target="_blank" class="btn btn-dark me-2">Maak afspraak</a>
+        <div class="dropdown-center">
         <button class="btn btn-outline-dark dropdown-toggle me-2" type="button" href="#" id="dropdown-menu" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-person"></i>
         </button>
@@ -51,6 +52,7 @@
           <li><a class="dropdown-item" href="registreer.html">Registreer</a></li>
           <li><a class="dropdown-item" href="Instellingenprofiel.html">Instellingen profiel</a></li>
         </ul>
+        </div>
 
         <!--                Cart-->
         <div class="btn btn-outline-dark cart" href="#">
@@ -85,7 +87,12 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
     <label class="form-check-label" for="exampleCheck1">Accepteer de voorwaarden.</label>
   </div>
-  <button type="submit" class="btn btn-dark">Registreer</button>
+  <button type="submit" class="btn btn-dark" onclick="myFunction()"> Registreer</button>
+  <script>
+    function myFunction() {
+      window.location.href="index.html"
+    }
+  </script>
   <div class="mb-3">
     <span>Al een account? <a href="login.html">Log hier in!</a></span>
   </div>
