@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="Style_Info_Pages.css">
+    <link rel="stylesheet" href="Style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
@@ -36,22 +37,32 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link mx-3" href="#">Kine</a>
+                    <a class="nav-link mx-3" href="InfoPage_Kine.html">Kine</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-3" href="#">Sport</a>
+                    <a class="nav-link mx-3" href="InfoPage_Sport.html">Sport</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-3" href="#">Voeding</a>
+                    <a class="nav-link mx-3" href="InfoPage_Voeding.html">Voeding</a>
                 </li>
             </ul>
             <div class="d-flex">
-                <button class="btn btn-dark me-2">Maak afspraak</button>
-                <a class="btn btn-outline-dark me-2" href="#">
+                <a href="Afspraken.html" target="_blank" class="btn btn-dark me-2">Maak afspraak</a>
+                <button class="btn btn-outline-dark dropdown-toggle me-2" type="button" href="#" id="dropdown-menu" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-person"></i>
-                </a>
-                <a class="btn btn-outline-dark" href="#">
-                    <i class="bi bi-cart"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="registreer.html">Registreer</a></li>
+                    <li><a class="dropdown-item" href="Instellingenprofiel.html">Instellingen profiel</a></li>
+                </ul>
+
+                <!--                Cart-->
+                <a href="cart.html">
+                    <div class="btn btn-outline-dark cart">
+                        <i class="bi bi-cart"></i>
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
                 </a>
             </div>
         </div>

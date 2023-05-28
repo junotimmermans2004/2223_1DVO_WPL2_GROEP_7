@@ -1,7 +1,7 @@
 /*main*/
 .navbar {
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 50px;
     padding-top: 25px;
 }
 
@@ -48,6 +48,100 @@ hr {
 /*allegie*/
 #allergie {
     padding: 10px;
+}
+
+.navbar {
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+/*Iconen kleur*/
+.btn-outline-primary:hover {
+    color: #fff;  /* tekstkleur wit maken */
+}
+.bg-img{
+    width: 100%;
+}
+
+/*Text home page*/
+.has-bg-img{
+    position: relative;
+    text-align: center;
+}
+.home_tekst{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    z-index: 2;
+}
+.home_tekst2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    /*background-color: black;*/
+    opacity: 50%;
+}
+
+
+
+
+
+/*Afdelingen*/
+
+/*Iconen en tekst afdelingen*/
+.icons_afdelingen{
+    height: 50px;
+}
+.afdelingen_tekst_sp{
+    color: #DA9CA6;
+}
+.afdelingen_tekst_ki{
+    color: #C9C1D8;
+}
+.afdelingen_tekst_vo{
+    color: #B3C9B7;
+}
+
+/*Registreer*/
+.registreer{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.registreer img{
+    height: 600px;
+    width: auto;
+}
+.registreer p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+    width: auto;
+}
+
+.registreer button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    border-radius: 50px;
+    height: 100px;
+    width: 300px;
+    background-color: #656565;
 }
 
 /*FOOTER*/
@@ -128,14 +222,37 @@ h6 a{
     padding-bottom: 38px;
 }
 
+/*CART*/
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+}
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 50px;
+}
 
 
 
-@media screen and (max-width: 767px) {
+
+
+
+
+
+
+@media screen and (max-width: 414px) {
     #myFooter {
         text-align: center;
     }
     #myFooter .row {
         margin: 0;
-    }
-}
+    }}
+
+

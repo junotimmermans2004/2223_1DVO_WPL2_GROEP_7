@@ -1,9 +1,11 @@
-/*main*/
 .navbar {
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 50px;
     padding-top: 25px;
 }
+
+
+
 
 main {
     padding-left: 60px;
@@ -120,6 +122,22 @@ h6 a{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 38px;
+}
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+}
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 50px;
 }
 
 
