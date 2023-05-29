@@ -52,7 +52,7 @@ table td {
 }
 
 #verstuurKnop {
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .boxstyle td {
@@ -117,11 +117,86 @@ input[type="radio"]:checked {
     margin-top: 3rem;
 }
 
+/*FOOTER*/
+h6 a{
+    text-decoration: none;
+}
+.footer_socials a i{
+    color: white;
+    font-size: 30px;
+}
 
-@media only screen
-and (device-width : 820px)
-and (device-height : 1180px)
-and (-webkit-device-pixel-ratio : 2) {
+.copyright{
+    width: 100%;
+}
+
+
+/*FOOTER2 css*/
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+
+@media only screen and (min-width : 500px) and (max-width : 900px) {
 
     nav div a img {
         width: 200px;
@@ -146,16 +221,33 @@ and (-webkit-device-pixel-ratio : 2) {
         border-spacing: 1rem 0.5rem;
     }
 
-    #verstuurKnop {
-        margin-top: 2rem;
-    }
-
     .contactbox1icons {
         font-size: 26px;
     }
 
-    .contactbox1text {
+    input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 2px solid #3F3F3F;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="radio"]:checked {
+        background-color: #3F3F3F;
+        background-image: url("Assets/whiteCheckmark.png");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+    }
+
+    .ghostText {
         font-size: 20px;
+    }
+
+    .contactbox1text {
+        font-size: 24px;
     }
 
     .inputVeld {
@@ -164,10 +256,8 @@ and (-webkit-device-pixel-ratio : 2) {
     }
 }
 
-@media only screen
-and (device-width : 414px)
-and (device-height : 896px)
-and (-webkit-device-pixel-ratio : 2) {
+
+@media only screen and (max-width : 500px) {
 
     #headerText {
         font-size: 38px;
@@ -200,11 +290,6 @@ and (-webkit-device-pixel-ratio : 2) {
     .contactbox1text {
         font-size: 20px;
     }
-
-    #verstuurKnop {
-        margin: 2rem 0 0 0;
-    }
-
 
     input[type="radio"] {
         -webkit-appearance: none;
