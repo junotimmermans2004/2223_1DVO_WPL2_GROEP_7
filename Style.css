@@ -188,12 +188,31 @@ h6 a{
 }
 
 
-
-@media screen and (max-width: 992px) {
-    /* Verberg de foto en tekst op mobiel en tabletweergaven */
-    #maak_account,
-    .text_registreer {
+/* Stijlen voor schermen kleiner dan 600 pixels breed */
+@media (max-width: 600px) {
+    /* Voeg hier je CSS-regels toe */
+    img{
+        overflow-x: hidden;
+    }
+    .registreer{
         display: none;
+    }
+}
+
+/* Stijlen voor schermen tussen 601 en 900 pixels breed */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Voeg hier je CSS-regels toe */
+    img{
+        overflow-x: hidden;
+    }
+}
+
+
+/* Stijlen voor schermen groter dan 901 pixels breed */
+@media (min-width: 901px) {
+    /* Voeg hier je CSS-regels toe */
+    img{
+        overflow-x: hidden;
     }
 }
 
@@ -201,8 +220,8 @@ h6 a{
 
 
 
-
 @media screen and (max-width: 414px) {
+
     #myFooter {
         text-align: center;
     }
