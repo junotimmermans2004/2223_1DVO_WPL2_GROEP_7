@@ -202,6 +202,9 @@ h6 a{
     .registreer{
         display: none;
     }
+    .werknemers{
+        display: none;
+    }
 }
 
 /* Stijlen voor schermen tussen 601 en 900 pixels breed */
@@ -209,6 +212,9 @@ h6 a{
     /* Voeg hier je CSS-regels toe */
     img{
         overflow-x: hidden;
+    }
+    .werknemers{
+        display: none;
     }
 }
 
@@ -225,5 +231,11 @@ h6 a{
     }
     #myFooter .row {
         margin: 0;
-    }}
+    }
+
+    .werknemers{
+        display: none;
+    }
+}
+
 
