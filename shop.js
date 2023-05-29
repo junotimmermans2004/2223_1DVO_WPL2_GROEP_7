@@ -205,4 +205,9 @@ let calculation = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     localStorage.removeItem('shop');
+    calculation(); // Roep de calculation() functie aan bij het laden van de pagina
 });
+
+
+
+
