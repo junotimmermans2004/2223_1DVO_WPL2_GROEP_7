@@ -208,13 +208,6 @@ h6 a{
 }
 
 
-/* Stijlen voor schermen groter dan 901 pixels breed */
-@media (min-width: 901px) {
-    /* Voeg hier je CSS-regels toe */
-    img{
-        overflow-x: hidden;
-    }
-}
 
 
 

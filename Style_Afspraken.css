@@ -96,6 +96,8 @@ button[type="submit"] {
 .employee-list.active {
     opacity: 1;
 }
+
+
 @media (max-width: 767px) {
     .container {
         margin: 15px auto;
