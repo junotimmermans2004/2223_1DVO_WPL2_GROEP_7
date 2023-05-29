@@ -1,12 +1,26 @@
 body {
-    background-image: url("Assets/infobg.PNG");
-    background-repeat: repeat;
+
 
 }
+#Voeding_bg {
+    background-image: url("Assets/bginfo.png");
+}
+
+#bg_Kine {
+    background-image: url("Assets/King_Bg.png");
+}
+
+#bg_Sport {
+    background-image: url("Assets/Sport_Bg.png");
+}
+
 .navbar {
     padding-left: 60px;
     padding-right: 50px;
     padding-top: 25px;
+}
+.OnsTeamInfo {
+    width: 350px;
 }
 
 /*Iconen kleur*/
@@ -159,7 +173,6 @@ h6 a{
 .Nav_Info:hover {
     font-size: 25px;
     transition: all 500ms;
-    font-size-adjust: 20px;
 }
 
 
@@ -190,13 +203,13 @@ h6 a{
         /* Voeg hier je CSS-regels toe */
         img{
             overflow-x: hidden;
-            width: 50%;
+
         }
         .registreer{
             display: none;
         }
         .OnsTeamInfo {
-            width: 100%;
+            width: 50%;
         }
     }
 
