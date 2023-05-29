@@ -4,6 +4,9 @@
     padding-right: 50px;
     padding-top: 25px;
 }
+body{
+    overflow-x: hidden;
+}
 
 /*Iconen kleur*/
 .btn-outline-primary:hover {

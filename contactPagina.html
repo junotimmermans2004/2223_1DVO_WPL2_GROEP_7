@@ -18,7 +18,7 @@
 
     <div class="container-fluid">
         <a class="navbar-brand mb-lg-3" href="index.html">
-            <img alt="vitalis" src="Assets/Middel%201.png" class="d-inline-block align-text-top">
+            <img alt="vitalis" src="Assets/Middel%201.png" width="150" height="auto" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,17 +30,17 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link mx-3" href="#">Kine</a>
+                    <a class="nav-link mx-3" href="InfoPage_Kine.html">Kine</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-3" href="#">Sport</a>
+                    <a class="nav-link mx-3" href="InfoPage_Sport.html">Sport</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-3" href="#">Voeding</a>
+                    <a class="nav-link mx-3" href="InfoPage_Voeding.html">Voeding</a>
                 </li>
             </ul>
             <div class="d-flex">
-                <button class="btn btn-dark me-2">Maak afspraak</button>
+                <a href="Afspraken.html" class="btn btn-dark me-2">Maak afspraak</a>
                 <div class="dropdown-center">
                     <button class="btn btn-outline-dark dropdown-toggle me-2" type="button" href="#" id="dropdown-menu" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-person"></i>
@@ -51,8 +51,14 @@
                         <li><a class="dropdown-item" href="Instellingenprofiel.html">Instellingen profiel</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-outline-dark" href="#">
-                    <i class="bi bi-cart"></i>
+
+
+                <!--                Cart-->
+                <a href="cart.html">
+                    <div class="btn btn-outline-dark cart">
+                        <i class="bi bi-cart"></i>
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
                 </a>
             </div>
         </div>
