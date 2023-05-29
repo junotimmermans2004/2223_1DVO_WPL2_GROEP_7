@@ -132,7 +132,6 @@ let shopItemsData = [
     // Voeg hier andere producten toe met hun categorieën
 ];
 
-
 let generateShop = () => {
     return shop.innerHTML = shopItemsData
         .map((x) => {
@@ -155,11 +154,7 @@ let generateShop = () => {
               </div>
             </div>
           </div>
-          
-          
     `;
-
-
         })
         .join("");
 };
@@ -179,7 +174,7 @@ let increment = (id) => {
     }
 
     update(id);
-    localStorage.setItem("shop", JSON.stringify(basket));
+    localStorage.setItem("shop", JSON.stringify(basket)); // Sla de winkelwageninhoud op in localStorage
 };
 
 let decrement = (id) => {
@@ -193,12 +188,12 @@ let decrement = (id) => {
     }
     update(selectedItem.id);
     basket = basket.filter((x) => x.item !== 0);
-    // console.log(basket);
-    localStorage.setItem("shop", JSON.stringify(basket));
+    localStorage.setItem("shop", JSON.stringify(basket)); // Sla de winkelwageninhoud op in localStorage
 };
+
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
-    // console.log(search.item);
+
     document.getElementById(id).innerHTML = search.item;
     calculation();
 };
@@ -208,16 +203,6 @@ let calculation = () => {
     cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
 
-calculation();
-
-
-// dit doet de shoping cart fatsoenlijk werken voor een of andere reden :/
-window.addEventListener('DOMContentLoaded', () => {
-    localStorage.removeItem('shop');
-});
-
-
-
-
-
-
+// window.addEventListener('DOMContentLoaded', () => {
+//     localStorage.removeItem('shop');
+// });
