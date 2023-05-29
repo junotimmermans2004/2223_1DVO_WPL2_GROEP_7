@@ -189,6 +189,13 @@ h6 a{
 
 
 
+@media screen and (max-width: 992px) {
+    /* Verberg de foto en tekst op mobiel en tabletweergaven */
+    #maak_account,
+    .text_registreer {
+        display: none;
+    }
+}
 
 
 
